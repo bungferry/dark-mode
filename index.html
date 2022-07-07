@@ -11,11 +11,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;500;600&display=swap">
   </head>
   <body>
-    <main>
-      <h1 class="h1">
-        404<span class="blink">|</span>
-      </h1>
-      <a href="/">&leftarrow;</a>
-    </main>
+    
+<!-- Container -->
+<div class="conatiner">
+  <!-- Heading Text -->
+  <h2 class="heading-text">Password Generator</h2>
+  <!-- Content Area -->
+  <div class="content-area">
+    <div class="result-box"> <!-- Result Box -->
+      <span>xdrt</span>
+    </div>
+    <div class="length-box"> <!-- Length Box -->
+      <p class="badge">Length <span>4</span></p> <!-- Box Title -->
+      <div class="length-choices-box">
+        <span class="active">4</span>
+        <span >8</span>
+        <span>16</span>
+        <span>20</span>
+        <span>26</span>
+      </div>
+    </div>
+    <div class="settings-box"> <!-- Settings Box -->
+      <p class="badge">Settings</p> <!-- Box Title -->
+      <div class="option-box">
+        <h4 class="option-title">Include Numbers</h4>
+        <div class="option-button">
+          <span id="include_numbers" data-value="1234567890"></span>
+        </div>
+      </div>
+      <div class="option-box">
+        <h4 class="option-title">Include Symbols</h4>
+        <div class="option-button">
+          <span id="include_symbols" data-value="@#$%&!-_"></span>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <!-- Generate Button -->
+  <button class="generateBtn">Generate</button>
+</div>
+<!-- End Container -->
   </body>
 </html>
